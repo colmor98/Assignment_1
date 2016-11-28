@@ -46,6 +46,19 @@ void window()
     text("Ganymede",612,148);
     textFont(font1,18);
     fill(255);
+    
+    //jupiter line
+    stroke(255);
+    noFill();
+    beginShape();
+    vertex(350,200);
+    vertex(400,150);
+    vertex(450,150);
+    endShape();
+    //jupiter tag
+    text("Jupiter",452,150);
+    textFont(font1,18);
+    fill(255);
 }
 
 void draw()
