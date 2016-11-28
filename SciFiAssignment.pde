@@ -11,6 +11,7 @@ PImage img;
 
 //font
 PFont font;
+PFont font1;
 
 //var
 int loading_bar = 0;
@@ -28,6 +29,23 @@ void setup()
   
   //fonts
   font = loadFont("AgencyFB-Bold-48.vlw");
+  font1 = loadFont("AgencyFB-Reg-48.vlw");
+}
+
+void window()
+{
+  //moon one info
+    stroke(255);
+    noFill();
+    beginShape( );
+    vertex(530,200);
+    vertex(580,150 );
+    vertex(610,150);
+    endShape();
+    //text for moon one
+    text("Ganymede",612,148);
+    textFont(font1,18);
+    fill(255);
 }
 
 void draw()
@@ -35,6 +53,7 @@ void draw()
    if(loading_bar == 300)
   {
     background(pic);
+    window();
   }
   else
     {
