@@ -10,6 +10,7 @@ PImage pic;
 PImage img;
 PImage Ganymede;
 PImage Jupiter;
+PImage Earth;
 
 //font
 PFont font;
@@ -23,6 +24,7 @@ float rotateValue = 0.0;
 loading load = new loading();
 ganymede ganymede = new ganymede();
 Jupiter jupiter = new Jupiter();
+Earth earth = new Earth();
 
 void setup()
 {
@@ -33,6 +35,7 @@ void setup()
   img = loadImage("stars.jpg");
   Ganymede = loadImage("Ganymede.png");
   Jupiter = loadImage("jupiter.png");
+  Earth = loadImage("earth.png");
   
   //fonts
   font = loadFont("AgencyFB-Bold-48.vlw");
@@ -157,5 +160,13 @@ void draw()
         jupiter.render();
       }
     }//end jupiter
+  
+  if(keyPressed);
+    {
+      if(key == 'e' || key == 'E')
+      {
+        earth.render();
+      }
+    }//end earth
   
 }
