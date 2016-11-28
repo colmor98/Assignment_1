@@ -6,7 +6,7 @@ class Jupiter
   
   void render()
   {
-     rotateValue +=.02;
+     rotateValue +=.05;
     
     noStroke();
     background(34,35,36,255);//no opacity

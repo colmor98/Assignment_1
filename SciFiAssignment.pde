@@ -11,6 +11,7 @@ PImage img;
 PImage Ganymede;
 PImage Jupiter;
 PImage Earth;
+PImage Luna;
 
 //font
 PFont font;
@@ -25,6 +26,7 @@ loading load = new loading();
 ganymede ganymede = new ganymede();
 Jupiter jupiter = new Jupiter();
 Earth earth = new Earth();
+Luna luna = new Luna();
 
 void setup()
 {
@@ -36,6 +38,7 @@ void setup()
   Ganymede = loadImage("Ganymede.png");
   Jupiter = loadImage("jupiter.png");
   Earth = loadImage("earth.png");
+  Luna = loadImage("luna.png");
   
   //fonts
   font = loadFont("AgencyFB-Bold-48.vlw");
@@ -128,6 +131,32 @@ void screen()
   vertex(1000,0);
   vertex(0,0);
   endShape(CLOSE);
+  
+  //oxygen level
+  ellipse(120,550, 130,130);
+  //O2 text
+  fill(255);
+  textFont(font1,20);
+  text("O",110,610);
+  textFont(font1,16);
+  text("2",119,610);
+  //speed lines
+  stroke(255,0,0);
+  line(58,565, 80, 560);
+  stroke(198,0,7);
+  line(58,530, 80,535);
+  stroke(5,129,10);
+  line(80,500, 95,515);
+  stroke(5,129,11);
+  line(115,485, 116,510);
+  stroke(5,129,11);
+  line(150,493, 140,515);
+  stroke(5,129,11);
+  line(180,530, 160,535);
+  stroke(5,129,11);
+  line(185,565, 160,560);
+  
+
 }
 
 void draw()
@@ -168,5 +197,13 @@ void draw()
         earth.render();
       }
     }//end earth
+    
+    if(keyPressed);
+    {
+      if(key == 'l' || key == 'L')
+      {
+        luna.render();
+      }
+    }//end luna
   
 }

@@ -7,13 +7,13 @@ class ganymede
   
   void render()
   {
-    rotateValue +=.02;
+    rotateValue +=.05;
     
     noStroke();
     background(34,35,36,255);//no opacity
     //rotate image
     pushMatrix();
-      translate(600,300);
+      translate(680,300);
       rotate(rotateValue);
       image(Ganymede,-167,-166);
     popMatrix();
