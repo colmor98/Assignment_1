@@ -34,55 +34,61 @@ void setup()
 
 void window()
 {
-  //moon one info
-    stroke(255);
-    noFill();
-    beginShape( );
-    vertex(530,200);
-    vertex(580,150 );
-    vertex(610,150);
-    endShape();
-    //text for moon one
-    text("Ganymede",612,148);
-    textFont(font1,18);
-    fill(255);
-    
-    //jupiter line
-    stroke(255);
-    noFill();
-    beginShape();
-    vertex(350,200);
-    vertex(400,150);
-    vertex(450,150);
-    endShape();
-    //jupiter tag
-    text("Jupiter",452,150);
-    textFont(font1,18);
-    fill(255);
-    
-    //earth line
-    stroke(255);
-    noFill();
-    beginShape();
-    vertex(250,310);
-    vertex(210,150);
-    vertex(170,150);
-    endShape();
-    //Earth text 
-    text("Earth",145,148);
-    textFont(font1,18);
-    
-    //Luna line
-     stroke(255);
-    noFill();
-    beginShape();
-    vertex(305,300);
-    vertex(270,100);
-    vertex(240,100);
-    endShape();
-    //Luna text
-    text("Luna",210,101);
-    textFont(font1,18);
+  if( mousePressed == true)
+  {
+     textFont(font1,18);
+
+    //moon one info
+      stroke(255);
+      noFill();
+      beginShape( );
+      vertex(530,200);
+      vertex(580,150 );
+      vertex(610,150);
+      endShape();
+      //text for moon one
+      text("Ganymede",612,148);
+      fill(255);
+      
+      //jupiter line
+      stroke(255);
+      noFill();
+      beginShape();
+      vertex(350,200);
+      vertex(400,150);
+      vertex(450,150);
+      endShape();
+      //jupiter tag
+      text("Jupiter",452,150);
+      fill(255);
+      
+      //earth line
+      stroke(255);
+      noFill();
+      beginShape();
+      vertex(250,310);
+      vertex(210,150);
+      vertex(170,150);
+      endShape();
+      //Earth text 
+      text("Earth",145,148);
+      
+      //Luna line
+       stroke(255);
+      noFill();
+      beginShape();
+      vertex(305,300);
+      vertex(270,100);
+      vertex(240,100);
+      endShape();
+      //Luna text
+      text("Luna",210,101);
+      
+    }
+  else
+  {
+    noStroke(); 
+  }
 
 }
 
