@@ -71,6 +71,18 @@ void window()
     //Earth text 
     text("Earth",145,148);
     textFont(font1,18);
+    
+    //Luna line
+     stroke(255);
+    noFill();
+    beginShape();
+    vertex(305,300);
+    vertex(270,100);
+    vertex(240,100);
+    endShape();
+    //Luna text
+    text("Luna",210,101);
+    textFont(font1,18);
 
 }
 
