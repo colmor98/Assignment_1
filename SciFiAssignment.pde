@@ -9,6 +9,7 @@ Description: A spaceship view onto a foreign planet
 PImage pic;
 PImage img;
 PImage Ganymede;
+PImage Jupiter;
 
 //font
 PFont font;
@@ -21,6 +22,7 @@ float rotateValue = 0.0;
 //classes
 loading load = new loading();
 ganymede ganymede = new ganymede();
+Jupiter jupiter = new Jupiter();
 
 void setup()
 {
@@ -30,6 +32,7 @@ void setup()
   pic = loadImage("spaceplanet.jpg");
   img = loadImage("stars.jpg");
   Ganymede = loadImage("Ganymede.png");
+  Jupiter = loadImage("jupiter.png");
   
   //fonts
   font = loadFont("AgencyFB-Bold-48.vlw");
@@ -138,6 +141,7 @@ void draw()
       load.render();
   }
     
+    //load ganymede
     if(keyPressed);
     {
       if(key == 'g' || key == 'G')
@@ -146,5 +150,12 @@ void draw()
       }
     }//end ganymede
     
+    if(keyPressed);
+    {
+      if(key == 'j' || key == 'J')
+      {
+        jupiter.render();
+      }
+    }//end jupiter
   
 }

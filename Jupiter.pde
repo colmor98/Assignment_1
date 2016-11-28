@@ -1,34 +1,34 @@
-class ganymede
+class Jupiter
 {
-  ganymede()
+  Jupiter()
   {
-    
   }
   
   void render()
   {
-    rotateValue +=.02;
+     rotateValue +=.02;
     
     noStroke();
     background(34,35,36,255);//no opacity
     //rotate image
     pushMatrix();
-      translate(600,300);
+      translate(650,300);
       rotate(rotateValue);
-      image(Ganymede,-167,-166);
+      image(Jupiter,-221.5,-221.5);
     popMatrix();
     
     textFont(font,40);
     fill(155,150,150);
     textSize(50);
-    text("Ganymede", width/2 - 20,50);
+    text("Jupiter", width/2 - 20,50);
     
     textFont(font,32);
-    text("- Jupiter's largest moon", 25,150);
-    text("- Largest moon in the solar\n  system", 25, 200);
-    text("- Only moon in the Solar System\n  with a magnetic field", 25, 300);
-    text("- Discovered by Galileo Galeli", 25, 400);
-    text("- Name suggested by astronomer\n  Simon Marius", 25, 450);
+    text("- Fifth planet from the sun", 25,150);
+    text("- A gas Giant, along with Saturn", 25,200);
+    text("- Named after the Roman God\n  Jupiter",25,250);
+    text("- Primarily composed of hydrogen\n  with one quarter of its mass\n  being helium",25,350);
+    text("- Discovered by Galileo Galilei",25,480);
+    
     
     //draw shape to surround text
     stroke(255);
@@ -44,6 +44,7 @@ class ganymede
     vertex(0,550);
     endShape();
     
+    
     //show text to show how to re-direct back to home screen
     textFont(font,18);
 
@@ -55,6 +56,6 @@ class ganymede
       {
         draw();
       }
-    }//end key pressed
-  }//end render
-}//end ganymede
+    }//end key pressed 
+  }
+}//end jupiter
