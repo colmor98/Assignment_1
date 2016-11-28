@@ -13,8 +13,7 @@ PImage img;
 PFont font;
 PFont font1;
 
-//var
-int loading_bar = 0;
+int loading_bar =0;
 
 //classes
 loading load = new loading();
@@ -37,7 +36,7 @@ void window()
   if( mousePressed == true)
   {
      textFont(font1,18);
-
+      fill(255);
     //moon one info
       stroke(255);
       noFill();
@@ -48,7 +47,7 @@ void window()
       endShape();
       //text for moon one
       text("Ganymede",612,148);
-      fill(255);
+      
       
       //jupiter line
       stroke(255);
@@ -60,7 +59,6 @@ void window()
       endShape();
       //jupiter tag
       text("Jupiter",452,150);
-      fill(255);
       
       //earth line
       stroke(255);
@@ -83,13 +81,30 @@ void window()
       endShape();
       //Luna text
       text("Luna",210,101);
-      
+            
     }
   else
   {
     noStroke(); 
   }
 
+}//end window()
+
+void screen()
+{
+  //view out window
+   stroke(255);
+   fill(6,62,106,191); //extra parameter adds opacity to shape
+   beginShape();
+   vertex(0, 480);
+   vertex(50, 510);
+   vertex(950,510);
+   vertex(1000,480);
+   vertex(1000,625);
+   vertex(0,625);
+   endShape(CLOSE);
+   
+      
 }
 
 void draw()
@@ -98,6 +113,7 @@ void draw()
   {
     background(pic);
     window();
+    screen();
   }
   else
     {

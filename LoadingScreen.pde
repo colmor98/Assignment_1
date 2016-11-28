@@ -1,8 +1,8 @@
 class loading
 {
+  
   loading()
   {
-    
   }
   void render()
   {
