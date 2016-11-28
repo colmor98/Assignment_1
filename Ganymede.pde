@@ -2,14 +2,21 @@ class ganymede
 {
   ganymede()
   {
+    
   }
   
   void render()
   {
+    rotateValue +=.02;
+    
     noStroke();
     background(34,35,36,255);//no opacity
-    
-    image(Ganymede,480,150);
+    //rotate image
+    pushMatrix();
+      translate(600,300);
+      rotate(rotateValue);
+      image(Ganymede,-150,-150);
+    popMatrix();
     
     textFont(font,40);
     fill(155,150,150);
@@ -38,6 +45,8 @@ class ganymede
     endShape();
     
     //show text to show how to re-direct back to home screen
+    textFont(font,18);
+
     text("Press 'b' or 'B' to return to your home screen", 10,610);
 
     if(keyPressed)

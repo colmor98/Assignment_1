@@ -14,7 +14,9 @@ PImage Ganymede;
 PFont font;
 PFont font1;
 
-int loading_bar =0;
+//variables
+int loading_bar = 0;
+float rotateValue = 0.0;
 
 //classes
 loading load = new loading();
