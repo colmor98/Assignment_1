@@ -59,6 +59,19 @@ void window()
     text("Jupiter",452,150);
     textFont(font1,18);
     fill(255);
+    
+    //earth line
+    stroke(255);
+    noFill();
+    beginShape();
+    vertex(250,310);
+    vertex(210,150);
+    vertex(170,150);
+    endShape();
+    //Earth text 
+    text("Earth",145,148);
+    textFont(font1,18);
+
 }
 
 void draw()
