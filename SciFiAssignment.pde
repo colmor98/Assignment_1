@@ -167,8 +167,13 @@ void O2()
 {
   rotateValue +=.01;
   stroke(255);
-triangle(115,550, 130,540, 121,552);
+  triangle(115,550, 130,540, 121,552);
   
+  fill(255,100);
+  ellipse(1000,625,310,230);
+  textFont(font1,20);
+  fill(6,62,106);
+  text("0 MPH", 940,620);
 
 }
 
