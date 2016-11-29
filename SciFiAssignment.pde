@@ -155,8 +155,48 @@ void screen()
   line(180,530, 160,535);
   stroke(5,129,11);
   line(185,565, 160,560);
+  //centre of circle
+  fill(255);
+  noStroke();
+  ellipse(120,550,10,10);
+  
+  
+}
+
+void O2()
+{
+  rotateValue +=.01;
+
+  pushMatrix();
+      stroke(255);
+      beginShape();
+      vertex(115,550);
+      vertex(130,540);
+      vertex(121,552);
+      endShape(CLOSE);
+      translate(120,550);
+      rotate(rotateValue);
+  popMatrix();
   
 
+}
+
+void radar()
+{
+ stroke(255);
+ fill(0,0,0,170);
+ rect(410,480,180,140,10);
+ //arcs
+ noFill();
+ arc(495,620, 60,60,radians(-180),0 );
+ arc(495,620, 140,130,radians(-180),0 );
+ arc(500,590, 180,140,radians(-180),0 );
+ fill(255);
+ beginShape();
+ vertex(495,620);
+ vertex(495,500);
+ vertex(505,500);
+ endShape(CLOSE);
 }
 
 void draw()
@@ -166,6 +206,8 @@ void draw()
     background(pic);
     window();
     screen();
+    O2();
+    radar();
   }
   else
   {
