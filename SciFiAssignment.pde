@@ -145,7 +145,7 @@ void screen()
   line(58,565, 80, 560);
   stroke(198,0,7);
   line(58,530, 80,535);
-  stroke(5,129,10);
+  stroke(250,255,3);
   line(80,500, 95,515);
   stroke(5,129,11);
   line(115,485, 116,510);
@@ -166,17 +166,8 @@ void screen()
 void O2()
 {
   rotateValue +=.01;
-
-  pushMatrix();
-      stroke(255);
-      beginShape();
-      vertex(115,550);
-      vertex(130,540);
-      vertex(121,552);
-      endShape(CLOSE);
-      translate(120,550);
-      rotate(rotateValue);
-  popMatrix();
+  stroke(255);
+triangle(115,550, 130,540, 121,552);
   
 
 }
@@ -191,12 +182,15 @@ void radar()
  arc(495,620, 60,60,radians(-180),0 );
  arc(495,620, 140,130,radians(-180),0 );
  arc(500,590, 180,140,radians(-180),0 );
+ 
  fill(255);
- beginShape();
- vertex(495,620);
- vertex(495,500);
- vertex(505,500);
- endShape(CLOSE);
+ triangle(495,620, 495,500, 505,500);
+ 
+ ellipse(480,570, 6,6);
+ noFill();
+ ellipse(480,570,14,14);
+   
+   
 }
 
 void draw()
