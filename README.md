@@ -20,5 +20,4 @@ I made use of global variables while rotating and while using the loading screen
 
 I created several classes while changing screens to display the planets/moons on different screens.
 
-[![Video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/tYPVnA3dRNo)
-
+[![Video](http://img.youtube.com/vi/tYPVnA3dRNo&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=tYPVnA3dRNo&feature=youtu.be)
